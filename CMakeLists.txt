@@ -111,3 +111,11 @@ if(IMPORT_DEPTH_CAM_FW)
 endif()
 
 include(CMake/embedd_udev_rules.cmake)
+
+set(CPACK_PACKAGE_NAME ${PROJECT_NAME}
+    CACHE STRING "The resulting package name"
+)
+
+set(CPACK_GENERATOR "DEB") # Specify the generator for Debian packages
+set(CPACK_DEB_COMPONENT_INSTALL ON) # Enable component-based installation
+include(CPack)
