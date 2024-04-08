@@ -118,4 +118,7 @@ set(CPACK_PACKAGE_NAME ${PROJECT_NAME}
 
 set(CPACK_GENERATOR "DEB") # Specify the generator for Debian packages
 set(CPACK_DEB_COMPONENT_INSTALL ON) # Enable component-based installation
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Intel")
+set(CPACK_PACKAGE_CONTACT "mindenkidj@gmail.com")
 include(CPack)
+
